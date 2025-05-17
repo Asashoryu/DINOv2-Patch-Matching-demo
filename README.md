@@ -7,15 +7,15 @@ This project aims to solve a Patch Matching task between two images using a self
 The goal is to evaluate the semantic consistency and robustness of feature embeddings across different viewpoints of the same object. This is achieved by:
 
 - Extracting patch-level features with DINOv2.
-(https://github.com/user-attachments/assets/039f886b-1e76-4a07-a5e4-9b6dc50b61f6)
+![Image 1](https://github.com/user-attachments/assets/039f886b-1e76-4a07-a5e4-9b6dc50b61f6)
 - Separating foreground from background using local PCA.
-(https://github.com/user-attachments/assets/eab82e32-2a96-41a8-9e88-268e9e9caab5)
+![Image 2](https://github.com/user-attachments/assets/eab82e32-2a96-41a8-9e88-268e9e9caab5)
 - Projecting embeddings into a shared space using joint PCA.
-(https://github.com/user-attachments/assets/8aaccc3b-e52b-410e-a995-d6da33662e7a)
+![Image 3](https://github.com/user-attachments/assets/8aaccc3b-e52b-410e-a995-d6da33662e7a)
 - Matching features using Euclidean distance and optimal assignment.
-(https://github.com/user-attachments/assets/4314a581-a5b7-4cba-b5e5-c4178fefec98)
+![Image 4](https://github.com/user-attachments/assets/4314a581-a5b7-4cba-b5e5-c4178fefec98)
 - Comparing the results with SIFT
-(https://github.com/user-attachments/assets/d837ee54-9ead-4844-98ab-44999ee018c7)
+![Image 5](https://github.com/user-attachments/assets/d837ee54-9ead-4844-98ab-44999ee018c7)
 
 ## 📁 Dataset
 
