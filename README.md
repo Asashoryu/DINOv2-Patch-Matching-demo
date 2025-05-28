@@ -33,3 +33,25 @@ dataset_path = "/content/SPair-71k/SPair-71k/JPEGImages/cat"
 BACKBONE_SIZE = "base_reg"
 img_size = 896
 patch_size = 14
+```
+
+## ⚠️ Disclaimer
+
+In my experimentation, I found that the foreground/background separation step using PCA filtering on the first principal component, like described in the paper, does not consistently behave as expected. While the method can distinguish the foreground object from the background, without corrections it could do the opposite as well or it could extract features that do not semantically correspond to what we would consider as the primary subject of the image.
+
+### Example 1
+![At times, the PCA separation technique doesn't succeed as intended.](https://github.com/user-attachments/assets/7729427a-aff3-4120-8584-ee39000ef980)
+
+### Example 2
+![In this image, it appears the attention mechanism detected greater semantic meaning in the water ripples than in the birds](https://github.com/user-attachments/assets/693ac8ff-6bc0-466d-b410-72c892888574)
+
+This behavior appears to be influenced by several factors, including:
+
+- The specific DINOv2 model variant and size (e.g., `vitb14` vs `vitg14`)
+- The dimensionality of the used embeddings
+- The particular image pair selected for the matching
+
+I experimented with several potential corrections to correct this behavior, however, none of these corrections proved statistically robust to be considered as a definitive solution.
+
+Currently, I am no longer actively pursuing this project. That said, if you are interested in continuing this line of work or exploring alternative approaches and correction, please feel free to build upon this project.
+
