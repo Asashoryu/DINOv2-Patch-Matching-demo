@@ -40,10 +40,14 @@ patch_size = 14
 In my experimentation, I found that the foreground/background separation step using PCA filtering on the first principal component, like described in the paper, does not consistently behave as expected. While the method can distinguish the foreground object from the background, without corrections it could do the opposite as well or it could extract features that do not semantically correspond to what we would consider as the primary subject of the image.
 
 ### Example 1
-![At times, the PCA separation technique doesn't succeed as intended.](https://github.com/user-attachments/assets/7729427a-aff3-4120-8584-ee39000ef980)
+![nasi1](https://github.com/user-attachments/assets/7729427a-aff3-4120-8584-ee39000ef980)
+
+* At times, the PCA separation technique doesn't succeed as intended.
 
 ### Example 2
-![In this image, it appears the attention mechanism detected greater semantic meaning in the water ripples than in the birds](https://github.com/user-attachments/assets/693ac8ff-6bc0-466d-b410-72c892888574)
+![nasi2](https://github.com/user-attachments/assets/693ac8ff-6bc0-466d-b410-72c892888574)
+
+* In this image, it appears the attention mechanism detected greater semantic meaning in the water ripples than in the birds.
 
 This behavior appears to be influenced by several factors, including:
 
