@@ -6,7 +6,7 @@ This project aims to solve a Patch Matching task between two images using a self
 
 The goal is to evaluate the semantic consistency and robustness of feature embeddings across different viewpoints of the same object. This is achieved by:
 
-- Loading Taj Mahal image pair.
+- Loading image pair.
 ![Image 1](https://github.com/user-attachments/assets/039f886b-1e76-4a07-a5e4-9b6dc50b61f6)
 - Extracting patch-level features with DINOv2.
 ![Image 2](https://github.com/user-attachments/assets/eab82e32-2a96-41a8-9e88-268e9e9caab5)
