@@ -6,9 +6,9 @@ This project aims to solve a Patch Matching task between two images using a self
 
 The goal is to evaluate the semantic consistency and robustness of feature embeddings across different viewpoints of the same object. This is achieved by:
 
-- Extracting patch-level features with DINOv2.
+- Loading Taj Mahal image pair.
 ![Image 1](https://github.com/user-attachments/assets/039f886b-1e76-4a07-a5e4-9b6dc50b61f6)
-- Separating foreground from background using local PCA.
+- Extracting patch-level features with DINOv2.
 ![Image 2](https://github.com/user-attachments/assets/eab82e32-2a96-41a8-9e88-268e9e9caab5)
 - Projecting embeddings into a shared space using joint PCA.
 ![Image 3](https://github.com/user-attachments/assets/8aaccc3b-e52b-410e-a995-d6da33662e7a)
